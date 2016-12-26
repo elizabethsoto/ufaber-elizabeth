@@ -1,0 +1,95 @@
+.foldscreen-3 .introduction {
+	width: 100%;
+	text-align: center;
+	padding: 30px 30px;
+	box-sizing: border-box;
+}
+.foldscreen-3 .introduction h1{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.foldscreen-3 .introduction p{
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	line-height: 17px;
+	color: rgba(0, 0, 0, 0.8);
+}
+.foldscreen-3 figure, .foldscreen-3 figure img {
+  	width: 100%;
+  	font-size: 0;
+}
+.foldscreen-3 .content {
+	margin: 0 20px;
+  	display: flex;
+  	overflow-x: auto;
+}
+
+.foldscreen-3 .content .content_news {
+	width: 250px;
+	min-width: 250px;
+	margin-right: 10px;
+}
+
+.foldscreen-3 .content .body_news{
+ 	border: black 1px solid;
+ 	margin: 0;
+ 	/*display: flex;*/
+}
+.foldscreen-3 .content .body_news h3{
+	padding: 5px 10px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.foldscreen-3 .content .body_news span{
+	padding: 0 10px;
+	font-size: 12px;
+}
+.foldscreen-3 .content.body_news .author::before {
+  content: "by:";
+  color: black;
+}
+.foldscreen-3 .content .body_news .conten{
+	display: flex;
+	padding: 0 10px;	
+}
+
+.foldscreen-3 .content .body_news .conten.bloq_star{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.foldscreen-3 .content .body_news .footer_news{
+	display: flex;
+	border-top: black 1px solid;
+	padding: 10px 10px;
+	justify-content:space-around;
+	background: #e4ebf3;
+}
+
+.foldscreen-3 .button {
+	margin-top: 10px;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+}
+.foldscreen-3 .button a{
+	font-size: 16px;
+	color: black;
+	border-radius: 25px;
+	background: rgba(0, 0, 0, 0.2);
+}
+.foldscreen-3 .button a:hover{
+	background: #3096d4;
+}
+.foldscreen-3 .button .browse{
+	margin-bottom: 20px;
+	padding: 10px 15px;
+	border: 1.5px solid white;
+	color: white;
+}
+.foldscreen-3 .button  img {
+    width: 12px;
+    align-self: center;
+}

@@ -1,0 +1,17 @@
+body{
+	font-family: sans-serif;
+	height: 5000px;
+}
+a {
+	text-decoration: none;
+}
+
+/*html, body {
+	height: 100%;
+	max-height: 100%;
+	overflow: auto;
+}
+.portal, .foldscreen-2, .foldscreen-3, .foldscreen-4, .foldscreen-5{
+	height: 100%;
+	overflow: hidden;
+}*/
