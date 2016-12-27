@@ -1,16 +1,23 @@
 .portal{
 	position: relative;
+	height: 100%;
 }
-
+.portal .content{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
 .portal .background{
+	height: 100%;
 	position: relative;
 	font-size: 0;
 }
+.portal .background .fondo{
+	height: 100%;
+}
 .portal .background .destock{
 	display: none;
-}
-.portal .background img{
-	width: 100%;
 }
 .portal .background .cap{
 	position: absolute;
@@ -18,7 +25,6 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
 }
 
 .portal .menu{
@@ -86,7 +92,7 @@
 	text-decoration: none;
 }
 .portal .description .buttons .start{
-	border: 1px solid white;	
+	border: 1px solid white;
 	margin-bottom: 10px;
 	padding: 10px 33px;
 
@@ -101,9 +107,11 @@
 }
 .portal .description .buttons .start:hover{
 	background: #14c752;
+	border: 1px solid #14c752;
 }
 .portal .description .buttons .browse:hover{
 	background: #14c752;
+	border: 1px solid #14c752;
 }
 .portal .description .buttons .browse span{
 	margin-right: 5px;
@@ -131,7 +139,7 @@
 	}
 }
 @media screen and (min-width: 768px){
-	portal .logo img {
+	.portal .logo img {
 		width: 40px;
 	}
 	.portal .logo span {
@@ -150,28 +158,34 @@
 		line-height: 30px;
 		color: rgba(255, 255, 255, 0.8);
 		margin-bottom: 100px;
+		margin-top: 20px;
 	}
 	.portal .description .buttons a{
 		font-size: 18px;
 		border-radius: 23px;
+
 	}
 	.portal .description .buttons .start{
-		margin-bottom: 20px;
-		padding: 14px 33px;
+		padding: 10px 33px;
+		padding-right: 20px;
+		margin: 0px 20px 0px 0px;
 	}
-	.portal .description .buttons .browse{
-		border: 1px solid white;
+
+	.portal .description .buttons {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
-		padding: 14px 15px;
+		justify-content: center;
+
 	}
 	.portal .description .buttons .browse img {
     width: 18px;
    	}
+		.portal .content-description{
+			top: calc(50% - 150px);
+		}
 
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 960px){
 	.portal .background .mobile-tablet{
 		display: none;
 	}
@@ -200,15 +214,19 @@
 	}
 	.portal .access a:hover{
 		background: #3096d4;
-		  
-	}
 
+	}
 	.portal .content-description{
-		top: calc(50% - 165px);
+		top: calc(50% - 150px);
 	}
 	.portal .description{
 		width: 90%;
 	}
 
+}
+@media screen and (min-width: 1024px){
+.portal .background .fondo {
+	width: 100%
+}
 
 }

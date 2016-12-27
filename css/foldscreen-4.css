@@ -34,13 +34,13 @@
 	font-weight: bold;
 	display: block;
 	background: white;
-	border-bottom: 1px solid #e4ebf3; 
+	border-bottom: 1px solid #e4ebf3;
 }
+
 .foldscreen-4 .menu .contend-list .sub-menu > a:hover {
 	background: #e4ebf3;
 	/*position: relative;*/
 }
-
 
 .foldscreen-4 .menu .contend-list .sub-menu .children li a {
 	color: #2b3438;
@@ -49,16 +49,17 @@
 	height: auto;
 }
 .foldscreen-4 .menu .contend-list .sub-menu .children {
-	height: 0;
+	/*height: 0;*/
+	display: none;
 	overflow: hidden;
 	transition: 3s;
 }
 .foldscreen-4 .menu .contend-list .sub-menu .children li {
 	display: flex;
 	justify-content: center;
-	
+
 }
-.foldscreen-4 .menu .contend-list .sub-menu > a:hover::before {
+/*.foldscreen-4 .menu .contend-list .sub-menu > a:hover::before {
 	content: "";
 	width: 100px;
 	height: 2px;
@@ -67,4 +68,10 @@
 	position: absolute;
 	bottom: 4px;
 	left: calc(50% - 50px);
+}*/
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 960px){
+
 }

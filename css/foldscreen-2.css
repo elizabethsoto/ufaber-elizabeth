@@ -1,126 +1,113 @@
-.foldscreen-2{
+.foldscreen-2 {
 	position: relative;
-}
-.foldscreen-2 .background{
-	position: relative;
-	font-size: 0;
-}
-.foldscreen-2 .background img{
-	width: 100%;
-}
-.foldscreen-2 .background .destock{
-	display: none;
-}
+	padding: 10px;
+	font-size: 15px;
+	color:#354b60;
 
-.foldscreen-2 .background .cap{
+}
+/*fondo de la seccion*/
+.foldscreen-2 .background{
 	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
-	
-}
-
-.foldscreen-2 .content-fold2{
-	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: -1;
+}
+.foldscreen-2 .background img{
+	height: 100%;
 	width: 100%;
 }
-.foldscreen-2 .content-fold2 .description{
-	width: 100%;
-	color: black;
+/*titulo de encabezado*/
+.foldscreen-2 .content-fold2 .header2 h2 {
 	text-align: center;
-	padding: 30px 30px;
-	box-sizing: border-box;
-}
-.foldscreen-2 .description h2{
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 10px;
-	color: rgba(0, 0, 0, 0.8);
-}
-.foldscreen-2 .description p{
-	font-size: 13px;
-	font-weight: bold;
-	line-height: 17px;
-	color: rgba(0, 0, 0, 0.8);
 	margin-bottom: 10px;
 }
-.foldscreen-2 .description span{
-	font-size: 13px;
-	font-weight: bold;
-	line-height: 17px;
-	color: rgba(0, 0, 0, 0.8);
+.foldscreen-2 .content-fold2 .header2 p {
+	text-align: center;
 }
-.foldscreen-2 .description .circles{
-	display: flex;
-	justify-content: center;
-	padding: 15px;
-}
-.foldscreen-2 .description .circles .circle{
-	padding: 5px;
-	background: rgba(0, 0, 0, 0.4);
-	border-radius: 50%;
-	margin-right: 2px;
-}
-.foldscreen-2 .description .circles .circle:hover{
-	background: #3096d4;
-}
+/*css de contennido*/
+.foldscreen-2 .content-fold2 .content-images {
 
-.foldscreen-2 .description .photo{
-	width: 85%;
-	max-width: 400px;
+
 }
-.foldscreen-2 .description .button{
+.foldscreen-2 .content-fold2 .content-images figure{
+	display: none;
+}
+.foldscreen-2 .content-fold2 .content-images figure .imagen {
+
+}
+.foldscreen-2 .content-fold2 .content-images figure .imagen img{
+	width: 80%;
+	max-width: 300px;
+	display: block;
+	margin: 10px auto;
+}
+.foldscreen-2 .content-fold2 .content-images figure span{
+	display: block;
+	text-align: center;
+}
+.foldscreen-2 .content-fold2 .content-images figure.visible{
+	display: block;
+}
+.foldscreen-2 .content-fold2 .content-images figure.visible span{
+	font-weight: bold;
+}
+/*Button*/
+.foldscreen-2 .button{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-.foldscreen-2 .description .button a{
+.foldscreen-2 .button a{
 	font-size: 16px;
 	color: black;
 	border-radius: 25px;
 }
-.foldscreen-2 .description .button .learn{
+.foldscreen-2 .button .learn{
 	margin-bottom: 20px;
 	padding: 8px 18px;
 	border: 1.5px solid white;
 	color: white;
 }
-.foldscreen-2 .description .button .learn:hover{
+.foldscreen-2 .button .learn:hover{
 	background: #3096d4;
 }
-.foldscreen-2 .description .button .learn span{
+.foldscreen-2 .button .learn span{
 	margin-right: 5px;
 }
-.foldscreen-2 .description .button .learn img{
+.foldscreen-2 .button .learn img{
 	width: 12px;
 	align-self: center;
 }
 
-.foldscreen-2 .description .information{
+.foldscreen-2 .information{
 	display: none;
 }
+.foldscreen-2 .cont-img{
+	position: absolute;
+	left: -130px;
+	bottom: -80px;
+}
+.foldscreen-2 .cont-img figure{
+	width: 310px;
+}
+.foldscreen-2 .cont-img figure img{
+	width: 100%;
 
-@media screen and (min-width: 1000px){
-.foldscreen-2 .background .mobile-tablet{
-	display: none;
 }
-.foldscreen-2 .background .destock{
-	display: block;
-}
-.foldscreen-2 .description .information{
-	display: block;
-}
-.foldscreen-2 .description .circles {
-	display: none;
-}
-.content-fold2 .description {
-	display: flex;
-	flex-direction:row;
-}
+@media screen and (min-width: 768px){
+	.foldscreen-2 {
+		padding-left: 50%;
+	}
 
-
-
+	.foldscreen-2 .content-fold2 .content-images figure{
+		display: block;
+	}
+	.foldscreen-2 .content-fold2 .content-images figure .imagen{
+		display: none;
+	}
+	.foldscreen-2 .content-fold2 .content-images figure.visible .imagen{
+		display: block;
+	}
 }
