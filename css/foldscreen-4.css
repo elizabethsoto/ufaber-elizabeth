@@ -1,7 +1,14 @@
 .foldscreen-4{
-	background: #e4ebf3;
+	position: relative;
+	background: url(../images/bg.jpg);
+}
+.foldscreen-4 .background {
+	position: absolute;
 	width: 100%;
-	/*height: 100%;	*/
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 .foldscreen-4 .title{
 	padding-top: 35px;
@@ -33,20 +40,24 @@
 	line-height: 40px;
 	font-weight: bold;
 	display: block;
-	background: white;
+	background: #dae5f2;
 	border-bottom: 1px solid #e4ebf3;
 }
-
 .foldscreen-4 .menu .contend-list .sub-menu > a:hover {
-	background: #e4ebf3;
+	background: ##dae5f2;
+	display: block;
 	/*position: relative;*/
 }
-
+.foldscreen-4 .menu .contend-list .sub-menu .children{
+	background: #e4ebf3;
+}
 .foldscreen-4 .menu .contend-list .sub-menu .children li a {
 	color: #2b3438;
+	font-size: 14px;
 }
 .foldscreen-4 .menu .contend-list .sub-menu > a:hover + ul {
-	height: auto;
+	/*height: auto;*/
+	display: block;
 }
 .foldscreen-4 .menu .contend-list .sub-menu .children {
 	/*height: 0;*/
@@ -69,6 +80,32 @@
 	bottom: 4px;
 	left: calc(50% - 50px);
 }*/
+.foldscreen-4 .contact{
+	padding: 20px 20px 15px 20px;
+}
+.foldscreen-4 .contact h1{
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.foldscreen-4 .contact p{
+	font-size: 14px;
+	padding-right: 80px;
+}
+.foldscreen-4 .button_become{
+	padding-left: 20px;
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 30px
+}
+.foldscreen-4 .button_become a{
+	color: white;
+  background: #f39c0f;
+  padding: 10px;
+	border-radius: 18px;
+	font-size: 14px;
+}
+.foldscreen-4 .menu .contend-list
 @media screen and (min-width: 768px){
 
 }

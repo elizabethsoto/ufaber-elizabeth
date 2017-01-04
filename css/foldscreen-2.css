@@ -1,9 +1,9 @@
 .foldscreen-2 {
+	background: url(../images/bg.jpg);
 	position: relative;
 	padding: 10px;
 	font-size: 15px;
 	color:#354b60;
-
 }
 /*fondo de la seccion*/
 .foldscreen-2 .background{
@@ -18,60 +18,96 @@
 	height: 100%;
 	width: 100%;
 }
+.foldscreen-2 .content-fold2{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
 /*titulo de encabezado*/
 .foldscreen-2 .content-fold2 .header2 h2 {
 	text-align: center;
 	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.foldscreen-2 .content-fold2 .header2 {
+	padding: 0px 20px;
 }
 .foldscreen-2 .content-fold2 .header2 p {
 	text-align: center;
+	font-size: 13px;
+	line-height: 16px;
 }
 /*css de contennido*/
-.foldscreen-2 .content-fold2 .content-images {
 
-
-}
 .foldscreen-2 .content-fold2 .content-images figure{
 	display: none;
 }
-.foldscreen-2 .content-fold2 .content-images figure .imagen {
-
+.foldscreen-2 .content-fold2 .content-images figure.visible{
+	display: block;
+	font-weight: bold;
+	font-size: 13px;
+	margin: 20px 0px;
+	text-align: center;
 }
 .foldscreen-2 .content-fold2 .content-images figure .imagen img{
-	width: 80%;
-	max-width: 300px;
+	width: 90%;
+	max-width: 350px;
 	display: block;
 	margin: 10px auto;
 }
-.foldscreen-2 .content-fold2 .content-images figure span{
-	display: block;
+.foldscreen-2 .content-fold2 .content-text{
+	font-size: 13px;
 	text-align: center;
 }
-.foldscreen-2 .content-fold2 .content-images figure.visible{
+.foldscreen-2 .content-fold2 .content-text .span{
+	display: none
+}
+.foldscreen-2 .content-fold2 .content-text .header-oculto{
+	display: none;
+}
+.foldscreen-2 .content-fold2 .circles{
+	display: flex;
+	justify-content: center;
+	margin: 25px 0px;
+}
+.foldscreen-2 .content-fold2 .circles .circle {
+	width: 8px;
+	height: 8px;
+	margin: 2px;
+	border-radius: 50%;
+	background: #bcc6cf;
+}
+.foldscreen-2 .content-fold2 .circles .circle.select {
+	background: #3096d4;
+	position: relative;
+}
+.foldscreen-2 .content-fold2 .circles .circle.select::after {
+	content: '';
 	display: block;
+	width: 2px;
+	height: 15px;
+	background:#3096d4;
+	position: absolute;
+	left: calc(50% - 1px);
+	bottom: 100%;
+
 }
-.foldscreen-2 .content-fold2 .content-images figure.visible span{
-	font-weight: bold;
-}
-/*Button*/
+
 .foldscreen-2 .button{
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 .foldscreen-2 .button a{
 	font-size: 16px;
-	color: black;
 	border-radius: 25px;
+	background: #3096d4;
 }
 .foldscreen-2 .button .learn{
-	margin-bottom: 20px;
+	margin-top: 0px;
 	padding: 8px 18px;
-	border: 1.5px solid white;
 	color: white;
-}
-.foldscreen-2 .button .learn:hover{
-	background: #3096d4;
+	margin-bottom: 30px;
 }
 .foldscreen-2 .button .learn span{
 	margin-right: 5px;
@@ -86,28 +122,111 @@
 }
 .foldscreen-2 .cont-img{
 	position: absolute;
-	left: -130px;
-	bottom: -80px;
+	left: -129px;
+	bottom: -78px;
 }
 .foldscreen-2 .cont-img figure{
 	width: 310px;
 }
 .foldscreen-2 .cont-img figure img{
 	width: 100%;
-
 }
+
 @media screen and (min-width: 768px){
 	.foldscreen-2 {
-		padding-left: 50%;
+		height: 100%;
+		display: flex;
+		align-items: center;
 	}
-
-	.foldscreen-2 .content-fold2 .content-images figure{
-		display: block;
-	}
-	.foldscreen-2 .content-fold2 .content-images figure .imagen{
+	.foldscreen-2 .content-fold2 .header2{
 		display: none;
 	}
-	.foldscreen-2 .content-fold2 .content-images figure.visible .imagen{
+	.foldscreen-2 .content-fold2 .content-images .visible span{
+		display: none;
+	}
+	.foldscreen-2 .content-fold2 .content-text .circles{
+		display: none;
+	}
+	.foldscreen-2 .content-fold2 .content-text .span{
+		display: flex;
+		flex-direction: column;
+	}
+	.foldscreen-2 .content-fold2 .content-text .header-oculto{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.foldscreen-2 .content-fold2{
+		display: flex;
+		justify-content: space-around;
+	}
+	.foldscreen-2 .content-fold2 .content-text{
+		text-align: start;
+	}
+	.foldscreen-2 .content-fold2 .content-text .header-oculto h2 {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 38px;
+	}
+	.foldscreen-2 .content-fold2 .content-text .header-oculto p{
+		font-size: 14px;
+		margin-bottom: 20px
+	}
+	.foldscreen-2 .content-fold2 .content-text .span{
+		line-height: 28px;
+		font-size: 14px;
+	}
+	.foldscreen-2 .cont-img figure {
+    width: 390px;
+	}
+	.foldscreen-2 .content-fold2 .content-images figure .imagen  {
+		margin-right: 50px;
+	}
+	.foldscreen-2 .content-fold2 .content-images figure .imagen img {
+		height: 340px;
+		width: 280px;
+	}
+	.foldscreen-2 .content-fold2 .content-images figure.visible span{
+		display: none;
+	}
+	.foldscreen-2 .content-fold2 .content-text span.lifetime {
+    margin: 0px 0px;
+		font-size: 13px;
+		position: relative;
+		font-weight: bold;
+	}
+	.foldscreen-2 .content-fold2 .content-text span.lifetime::after {
+		content: '';
 		display: block;
+		width: 30px;
+		height: 1px;
+		background:#3096d4;
+		position: absolute;
+		top: calc(50% - 0.5px);
+		left: -5px;
+		bottom: 100%;
+	}
+	.foldscreen-2 .button .learn {
+		margin-top: 20px;
+	}
+	.foldscreen-2 .button {
+    justify-content: flex-start;
+	}
+	.foldscreen-2 .cont-img{
+		left: -163px;
+		bottom: -104px;
+	}
+
+}
+@media screen and (min-width: 960px){
+}
+@media screen and (min-width: 1024px){
+.foldscreen-2 .content-fold2 .content-text span.lifetime::after {
+	width: 30px;
+	top: calc(50% - 0.5px);
+	left: -50px;
+}
+	.foldscreen-2 .content-fold2 .content-text .span {
+    line-height: 35px;
 	}
 }

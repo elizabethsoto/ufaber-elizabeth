@@ -50,6 +50,7 @@
 }
 .portal .logo span{
 	color: white;
+	font-size: 24px;
 }
 
 .portal .access{
@@ -70,15 +71,17 @@
 	box-sizing: border-box;
 }
 .portal .description h1{
-	font-size: 18px;
-	line-height: 20px;
+	font-size: 23px;
+	line-height: 28px;
 	margin-bottom: 30px;
 }
 .portal .description p{
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 	color: rgba(255, 255, 255, 0.8);
 	margin-bottom: 50px;
+	padding: 0 5px;
+
 }
 .portal .description .buttons{
 	display: flex;
@@ -86,7 +89,8 @@
 }
 .portal .description .buttons a{
 	align-self: center;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: bold;
 	border-radius: 17px;
 	color: white;
 	text-decoration: none;
@@ -225,8 +229,8 @@
 
 }
 @media screen and (min-width: 1024px){
-.portal .background .fondo {
-	width: 100%
-}
+  .portal .background .fondo {
+	   width: 100%
+   }
 
 }
