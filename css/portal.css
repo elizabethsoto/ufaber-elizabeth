@@ -26,21 +26,21 @@
 	width: 100%;
 	height: 100%;
 }
-
-.portal .menu{
+.portal .subcontent{
 	position: absolute;
-	top: 10%;
-	left: 0;
+	top:25px;
 	width: 100%;
-
+}
+.portal .menu{
+	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding-bottom: 55px;
 }
 .portal .logo{
-
 	display: flex;
 	flex-direction: row;
-	justify-content: ce;
+	justify-content: center;
 	align-items: center;
 }
 .portal .logo img{
@@ -52,15 +52,10 @@
 	color: white;
 	font-size: 24px;
 }
-
 .portal .access{
 	display: none;
 }
-
 .portal .content-description{
-	position: absolute;
-	top: calc(50% - 110px);
-	left: 0;
 	width: 100%;
 }
 .portal .description{
@@ -77,7 +72,7 @@
 }
 .portal .description p{
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 26px;
 	color: rgba(255, 255, 255, 0.8);
 	margin-bottom: 50px;
 	padding: 0 5px;
@@ -89,7 +84,7 @@
 }
 .portal .description .buttons a{
 	align-self: center;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: bold;
 	border-radius: 17px;
 	color: white;
@@ -98,16 +93,17 @@
 .portal .description .buttons .start{
 	border: 1px solid white;
 	margin-bottom: 10px;
-	padding: 10px 33px;
-
+	width: 160px;
+	padding: 10px;
 }
 .portal .description .buttons .browse{
 	border: 1px solid white;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	padding: 10px 15px;
-	margin-bottom:
+	justify-content: center;
+	width: 160px;
+	padding: 10px;
+	margin-bottom:35px;
 }
 .portal .description .buttons .start:hover{
 	background: #14c752;
@@ -125,14 +121,10 @@
 	align-self: center;
 }
 .portal .arrow-bottom{
-	position: absolute;
-	bottom: 7%;
-	left: 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-
 @media screen and (min-width: 480px){
 	.portal .content-description{
 		display: flex;
@@ -141,21 +133,45 @@
 	.portal .description{
 		width: 400px;
 	}
-}
+	.portal .description .buttons .browse {
+		margin-bottom: 65px;
+	}
 @media screen and (min-width: 768px){
 	.portal .logo img {
-		width: 40px;
+		width: 30px;
+		align-self: center;
 	}
 	.portal .logo span {
-		font-size: 30px;
-   }
+		font-size: 20px;
+ }
+	 .portal .subcontent {
+	 padding: 0px 20px 0px 20px;
+	}
+	 .portal .menu{
+ 		display: flex;
+ 		justify-content: space-between;
+ 	}
+	 .portal .access{
+ 		display: flex;
+ 		justify-content: space-between;
+ 	}
+	.portal .access a {
+		color: white;
+		border-radius: 19px;
+		font-size: 16px;
+		margin-right: 10px;
+		padding: 10px 30px;
+		background: rgba(255, 255, 255, 0.2);
+	}
+	.portal .access a:hover{
+		background: #3096d4;
+	}
 	.portal .description{
-		width: 600px;
+		width: 750px;
 	}
 	.portal .description h1{
 		font-size: 30px;
 		line-height: 32px;
-
 	}
 	.portal .description p{
 		font-size: 22px;
@@ -164,73 +180,39 @@
 		margin-bottom: 100px;
 		margin-top: 20px;
 	}
-	.portal .description .buttons a{
-		font-size: 18px;
-		border-radius: 23px;
-
-	}
-	.portal .description .buttons .start{
-		padding: 10px 33px;
-		padding-right: 20px;
-		margin: 0px 20px 0px 0px;
-	}
-
 	.portal .description .buttons {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-
+		margin-bottom: 55px;
+	}
+	.portal .description .buttons a{
+		font-size: 18px;
+		border-radius: 25px;
 	}
 	.portal .description .buttons .browse img {
     width: 18px;
-   	}
-		.portal .content-description{
-			top: calc(50% - 150px);
-		}
-
+  }
+	.portal .description .buttons .start{
+		width: 190px;
+		margin-bottom: 0px;
+		margin-right: 20px;
+	}
+	.portal .description .buttons .browse{
+		width: 190px;
+		margin-bottom: 0px;
+	}
 }
 @media screen and (min-width: 960px){
-	.portal .background .mobile-tablet{
-		display: none;
-	}
-	.portal .background .destock{
-		display: block;
-	}
-
-	.portal .menu{
-		top: 5%;
-		display: flex;
-		justify-content: space-between;
-		padding: 0 50px;
-		box-sizing: border-box;
-	}
-	.portal .access{
-		display: flex;
-		justify-content: space-between;
-	}
-	.portal .access a {
-		color: white;
-		border-radius: 19px;
-		font-size: 18px;
-		margin-right: 10px;
-		padding: 10px 30px;
-		background: rgba(255, 255, 255, 0.2);
-	}
-	.portal .access a:hover{
-		background: #3096d4;
-
-	}
-	.portal .content-description{
-		top: calc(50% - 150px);
-	}
 	.portal .description{
-		width: 90%;
+		width: 950px;
 	}
-
+	.portal .description .buttons {
+		margin-bottom: 85px;
+	}
 }
 @media screen and (min-width: 1024px){
-  .portal .background .fondo {
+	.portal .background .fondo {
 	   width: 100%
    }
-
 }

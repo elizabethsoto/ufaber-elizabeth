@@ -1,11 +1,10 @@
 .foldscreen-3{
-	/*height: 100%;*/
 	position:relative;
+	padding-top: 40px;
 }
 .foldscreen-3 .introduction {
     width: 100%;
     text-align: center;
-    margin-top: 40px;
     padding: 30px 30px 20px 30px;
     box-sizing: border-box;
 }
