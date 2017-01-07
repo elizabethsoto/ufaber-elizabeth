@@ -1,0 +1,184 @@
+.foldscreen-5 {
+  padding: 65px 25px;
+}
+.foldscreen-5 .title{
+  text-align: center;
+}
+.foldscreen-5 .title h2{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.foldscreen-5 .title p{
+  font-size: 13px;
+  line-height: 20px;
+}
+.foldscreen-5 .logos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.foldscreen-5 .logos figure img{
+  width: 100px;
+}
+.foldscreen-5 .students{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.foldscreen-5 .students .section1{
+  border: 2px solid #eceef1;
+}
+.foldscreen-5 .students .section1 .video-1 img{
+  width: 100%;
+}
+.foldscreen-5 .students .section1 .video-2{
+  display: none;
+}
+.foldscreen-5 .students .section1 .content{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.foldscreen-5 .students .section1 .content p{
+  font-size: 13px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+.foldscreen-5 .students .section1 .content .perfil{
+  display: flex;
+}
+.foldscreen-5 .students .section1 .content .perfil figure{
+  padding-right: 10px;
+}
+.foldscreen-5 .students .section1 .content .perfil .name{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.foldscreen-5 .students .section1 .content .name span{
+  font-size: 14px;
+  font-weight: bold;
+}
+.foldscreen-5 .students .section1 .content .name h2{
+  font-size: 12px;
+}
+.foldscreen-5 .students .section2{
+  display: none;
+}
+.foldscreen-5 .button{
+  display: flex;
+  justify-content: center;
+}
+.foldscreen-5 .button a{
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 480px){
+  .foldscreen-5 .logos figure img {
+    width: 170px;
+  }
+}
+@media screen and (min-width: 768px){
+  .foldscreen-5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .foldscreen-5 .title h2 {
+    font-size: 22px;
+    padding-bottom: 8px;
+  }
+  .foldscreen-5 .title p {
+    font-size: 16px;
+  }
+  .foldscreen-5 .logos {
+    padding: 10px 0px;
+  }
+  .foldscreen-5 .logos figure img {
+    width: 126px;
+  }
+  .foldscreen-5 .students {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+  }
+  .foldscreen-5 .students .section1 {
+    display: flex;
+    width: 60%;
+    font-size: 0px;
+  }
+  .foldscreen-5 .students .section1 .content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .foldscreen-5 .students .section1 .video-1{
+  display: none;
+  }
+  .foldscreen-5 .students .section1 .video-2{
+    display: block;
+  }
+  .foldscreen-5 .students .section2{
+    display: flex;
+    border: 2px solid #eceef1;
+    width: 30%;
+  }
+  .foldscreen-5 .students .section2 .content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .foldscreen-5 .students .section2 .content p{
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px;
+  }
+  .foldscreen-5 .students .section2 .content .perfil{
+    display: flex;
+    border-top: 2px solid #eceef1;
+    padding-top: 10px;
+  }
+  .foldscreen-5 .students .section2 .content .perfil figure{
+    padding: 0px 10px;
+  }
+  .foldscreen-5 .students .section2 .content .perfil .name2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .foldscreen-5 .students .section2 .content .name2 span{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .foldscreen-5 .students .section2 .content .name2 h2{
+    font-size: 12px;
+  }
+  .foldscreen-5 .button img{
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 960px){
+  .foldscreen-5{
+    padding: 0px 65px;
+  }
+  .foldscreen-5 .logos figure img {
+    width: 160px;
+}
+  .foldscreen-5 .students .section1 .content p {
+    font-size: 16px;
+  }
+  .foldscreen-5 .students .section2 .content p {
+    font-size: 16px;
+    padding: 8px;
+}

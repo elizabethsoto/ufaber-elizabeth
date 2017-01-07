@@ -114,7 +114,7 @@
 }
 .foldscreen-2 .button .learn img{
 	width: 12px;
-	align-self: center;
+	vertical-align: middle;
 }
 
 .foldscreen-2 .information{
@@ -122,7 +122,7 @@
 }
 .foldscreen-2 .cont-img{
 	position: absolute;
-	left: -129px;
+	left: -115px;
 	bottom: -78px;
 }
 .foldscreen-2 .cont-img figure{
@@ -203,7 +203,7 @@
 		background:#3096d4;
 		position: absolute;
 		top: calc(50% - 0.5px);
-		left: -5px;
+		left: -50px;
 		bottom: 100%;
 	}
 	.foldscreen-2 .button .learn {

@@ -1,0 +1,183 @@
+.foldscreen-6{
+  padding: 25px;
+  background: #1e3346;
+  color: white;
+}
+.foldscreen-6  .title{
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.foldscreen-6 .content-1 .menu .list{
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #354b60;
+}
+.foldscreen-6 .content-1 .menu ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 25px;
+  font-size: 14px;
+}
+.foldscreen-6 .content-1 .menu li{
+  width: 40%;
+}
+.foldscreen-6 .content-1 .menu a{
+  color: white;
+}
+.foldscreen-6 .contact{
+  padding: 20px 0px;
+  border-bottom: 1px solid #354b60;
+}
+.foldscreen-6 .contact .phone{
+  display: flex;
+  padding-bottom: 16px;
+}
+.foldscreen-6 .contact .e-mail{
+  display: flex;
+}
+.foldscreen-6 .contact  img {
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.foldscreen-6 .contact h2{
+  font-size: 14px;
+}
+.foldscreen-6 .contact .button{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+.foldscreen-6 .contact .button a{
+  color: white;
+  font-size: 14px;
+  background: #3096d4;
+  border-radius: 20px;
+  padding: 8px;
+}
+.foldscreen-6 .about{
+  padding: 20px 0px;
+  border-bottom: 1px solid #354b60;
+}
+.foldscreen-6 .about p{
+  font-size: 13px;
+  line-height: 18px;
+}
+.foldscreen-6 .content-2{
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+.foldscreen-6 .content-2 .logo-ufaber{
+  height: 100%;
+  padding-right: 10px;
+}
+.foldscreen-6 .content-2 .logo-ufaber img{
+  width: 40px;
+}
+.foldscreen-6 .content-2 .contenedor{
+  display: flex;
+  flex-direction: column;
+}
+.foldscreen-6 .content-2 .contenedor .direction h2{
+  font-size: 13px;
+  line-height: 16px;
+  padding-bottom: 10px;
+}
+.foldscreen-6 .content-2 .contenedor .direction h3{
+  font-size: 11px;
+    line-height: 18px;
+}
+.foldscreen-6 .content-2 .contenedor .icons-contact{
+  display: flex;
+  padding: 20px 0px;
+}
+.foldscreen-6 .content-2 .contenedor .icons-contact figure{
+  padding-right: 10px;
+}
+.foldscreen-6 .content-2 .contenedor .icons-contact img{
+  width: 35px;
+}
+@media screen and (min-width: 480px){
+  .foldscreen-6{
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 768px){
+  .foldscreen-6 .content-1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #354b60;
+    padding-bottom: 20px;
+  }
+  .foldscreen-6 .content-1 .menu{
+    width: 25%;
+  }
+  .foldscreen-6 .content-1 .contact{
+    width: 25%;
+    border-bottom: none;
+    padding: 0px;
+  }
+  .foldscreen-6 .content-1 .about{
+    width: 40%;
+    padding: 0px;
+  }
+  .foldscreen-6 .content-1 .menu .list{
+    border-bottom: none;
+  }
+  .foldscreen-6 .about {
+    border-bottom: none;
+  }
+  .foldscreen-6 .content-2 .contenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .foldscreen-6 .content-2 .contenedor .icons-contact {
+    padding: 0px;
+  }
+  .foldscreen-6 .title {
+    font-size: 13px;
+  }
+  .foldscreen-6 .content-1 .menu ul {
+    line-height: 22px;
+    font-size: 13px;
+  }
+  .foldscreen-6 .contact h2 {
+      font-size: 13px;
+  }
+  .foldscreen-6 .contact .button a {
+    font-size: 13px;
+  }
+  .foldscreen-6 .content-2 .contenedor .direction h2 {
+    font-size: 11px;
+  }
+  .foldscreen-6 .content-2 .contenedor .direction h3 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  @media screen and (min-width: 960px){
+    .foldscreen-6 .title {
+      font-size: 12px;
+    }
+    .foldscreen-6 .content-1 .menu ul {
+      line-height: 20px;
+      font-size: 12px;
+    }
+    .foldscreen-6 .contact h2 {
+        font-size: 12px;
+    }
+    .foldscreen-6 .contact .button a {
+      font-size: 12px;
+    }
+    .foldscreen-6 .content-2 .contenedor .direction h2 {
+      font-size: 10px;
+    }
+    .foldscreen-6 .content-2 .contenedor .direction h3 {
+      font-size: 8px;
+      line-height: 12px;
+  }
+}
