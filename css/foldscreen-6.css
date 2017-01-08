@@ -8,6 +8,7 @@
   font-size: 14px;
   font-weight: bold;
   padding-bottom: 15px;
+  color: #899daf;
 }
 
 .foldscreen-6 .content-1 .menu .list{
@@ -89,7 +90,8 @@
 }
 .foldscreen-6 .content-2 .contenedor .direction h3{
   font-size: 11px;
-    line-height: 18px;
+  line-height: 18px;
+  color: #90bcc7;
 }
 .foldscreen-6 .content-2 .contenedor .icons-contact{
   display: flex;
@@ -114,12 +116,14 @@
     padding-bottom: 20px;
   }
   .foldscreen-6 .content-1 .menu{
-    width: 25%;
+    width: 30%;
+    border-right: 1px solid #354b60;
   }
   .foldscreen-6 .content-1 .contact{
     width: 25%;
     border-bottom: none;
     padding: 0px;
+    border-right: 1px solid #354b60;
   }
   .foldscreen-6 .content-1 .about{
     width: 40%;

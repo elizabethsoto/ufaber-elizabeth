@@ -20,6 +20,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.foldscreen-5 .logos figure:hover img{
+  filter: none;
+}
 .foldscreen-5 .logos figure img{
   width: 100px;
 }
